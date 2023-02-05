@@ -1,5 +1,13 @@
 graficamente ho utilizzato Figure + Accordion di react bootstrap
 
+### Screen hopage
+![Cattura1](https://user-images.githubusercontent.com/98649610/216814426-056ca305-8490-42b6-858f-56103b85f8d1.JPG)
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
