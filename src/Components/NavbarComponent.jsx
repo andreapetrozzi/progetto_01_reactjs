@@ -9,32 +9,28 @@ const NavbarComponent = () => (
     expand="lg"
     className="navbar navbar-expand-lg navbar-dark"
   >
-    <Navbar.Brand href="#">
+    <Navbar.Brand href="https://www.netflix.com">
       <img
-        src="../../public/logo.png"
-        alt="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
         width="100px"
-        height="50px"
+        height="30px"
         className="d-inline-block align-top"
+        alt="Netflix"
       />
     </Navbar.Brand>
-
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="mr-auto">
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#tvShows">Tv Shows</Nav.Link>
         <Nav.Link href="#movies">Movies</Nav.Link>
-        <Nav.Link href="#recentlyAdded">Recently Added</Nav.Link>
+        <Nav.Link href="#recentlyAdded">New</Nav.Link>
         <Nav.Link href="#myList">My List</Nav.Link>
       </Nav>
-
       <Nav>
         <Nav.Link href="#search">
           <FontAwesomeIcon icon={faSearch} />
         </Nav.Link>
-
         <NavDropdown title="Search" id="collasible-nav-dropdown">
           <Form className="d-flex">
             <FormControl
@@ -45,15 +41,12 @@ const NavbarComponent = () => (
             />
           </Form>
         </NavDropdown>
-
         <Nav.Link href="#kids" id="kids">
           KIDS
         </Nav.Link>
-
         <Nav.Link href="#notifications">
           <FontAwesomeIcon icon={faBell} />
         </Nav.Link>
-
         <Nav.Link href="#profile">
           <FontAwesomeIcon icon={faUser} />
         </Nav.Link>
@@ -61,5 +54,4 @@ const NavbarComponent = () => (
     </Navbar.Collapse>
   </Navbar>
 );
-
 export default NavbarComponent;
