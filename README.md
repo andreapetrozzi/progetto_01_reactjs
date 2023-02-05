@@ -1,4 +1,79 @@
-graficamente ho utilizzato Figure + Accordion di react bootstrap
+Netflix in React
+Refactoring a Netflix project to JS.
+It will need to become a React application with data fetching from “The Open Movie Database”.
+
+Suggested steps:
+1) Create a new react-app, and starting from the provided Netflix project,
+    start carrying the home page interface via React components (navbar, footer, etc.)
+2) Create, using components, different "galleries" for movies
+    (at least 3 galleries with 3 saga movies you like, example: Harry Potter, Lord of the Rings etc.)
+3) These galleries will need to fetch data from Omdb APIs on component load
+
+[EXTRA] Add loaders and error handling to main page
+
+API Docs:
+Register at http://www.omdbapi.com/
+Once registered, you will receive an email with the API Key.
+The endpoint to search should look like this:
+
+http://www.omdbapi.com/?apikey=[PUT_YOUR_API_KEY_HERE]&s=harry%20potter
+
+Each search will return an item similar to this:
+
+     {
+     "Search": [
+         {
+             "Title": "Harry Potter and the Deathly Hallows: Part 2",
+             "Year": "2011",
+             "imdbID": "tt1201607",
+             "Type": "movie",
+             "Poster": "https://bit.ly/3sufYok"
+         },
+         {
+             "Title": "Harry Potter and the Sorcerer's Stone",
+             "Year": "2001",
+             "imdbID": "tt0241527",
+             "Type": "movie",
+             "Poster": "https://bit.ly/3tTtx0H"
+         },
+         {
+             "Title": "Harry Potter and the Chamber of Secrets",
+             "Year": "2002",
+             "imdbID": "tt0295297",
+             "Type": "movie",
+             "Poster": "https://bit.ly/31gVxzb"
+         },
+         {
+             "Title": "Harry Potter and the Prisoner of Azkaban",
+             "Year": "2004",
+             "imdbID": "tt0304141",
+             "Type": "movie",
+             "Poster": "https://bit.ly/2QzHt1n"
+         },
+     ],
+     "totalResults": "80",
+     "Response": "True"
+     }
+    
+ATTENTION
+Please remember to check the response structure you get from OMDB!
+e.g. the array containing the movie objects is the value of the property called Search,
+not the answer itself (which is an object!).
+
+
+TERMINAL
+
+npm i @fortawesome/react-fontawesome
+![Cattura1](https://user-images.githubusercontent.com/98649610/216826523-c045d455-6630-4bef-ba73-6832df833bf2.JPG)
+
+
+
+
+
+
+
+
+
 
 # Getting Started with Create React App
 
